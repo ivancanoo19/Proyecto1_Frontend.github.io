@@ -1,0 +1,230 @@
+:root{
+    --primario: #014c40;
+    --rojo: #D12626;
+    --blanco: #FFF;
+    --negro: #000;
+    --fuentePrincipal: 'Josefin Sans', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.6rem;
+    font-family: var(--fuentePrincipal);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2{
+    text-align: center;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+}
+
+/* Definir el tamaño de fuente de cada uno de los headers*/
+
+h1{
+    font-size: 3.5rem;
+}
+
+h3{
+    color: var(--primario);
+    font-family: var(--fuentePrincipal);
+    text-align: initial;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.subfooter{
+    background-color: #d4d4d4;
+}
+
+.subfooter__texto{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.navegacion{
+    background-color: var(--primario);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.navegacion__link{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+}
+
+.navegacion__link:hover{
+    color: #D12626;
+}
+
+.contenedor__inicio__texto{
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.contenedor__menu__desayunos,
+.contenedor__menu__comidas,
+.contenedor__menu__postres {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: var(--blanco);
+    height: 400px;
+    margin-bottom: 1rem;
+}
+
+.contenedor__menu__desayunos {
+    background-image: url('../img/img_desayuno.png');
+}
+
+.contenedor__menu__comidas {
+    background-image: url('../img/img_comida.png');
+}
+
+.contenedor__menu__postres {
+    background-image: url('../img/img_postre.png');
+}
+
+@media (min-width: 768px) {
+    .contenedor__menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+.contenedor__menu__texto{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 2.2rem;
+}
+
+.contenedor__menu__texto:hover{
+    font-weight: 900;
+    font-size: 2.6rem;
+}
+
+.menu_social{
+    width: auto;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer{
+    background-color: var(--primario);
+    display: flex;
+    justify-content: center;
+
+    max-width: 100%;
+    margin-top: 4rem;
+}
+
+.footer__contenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer__texto{
+    color: #FFF;
+    font-family: var(--fuentePrincipal);
+}
+
+.footer__texto:hover{
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #FFF;
+}
+
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-family: var(--fuentePrincipal);
+    color: var(--negro);
+}
+
+.input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: var(--fuentePrincipal);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #D12626;
+}
+
+.contenedor__form{
+    margin-bottom: 3rem;
+}
+
+
+
+.contenedor__inicio__texto {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.contenedor__inicio__texto.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}

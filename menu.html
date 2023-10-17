@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italianni's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const contenedorInicioTexto = document.querySelector('.contenedor__inicio__texto');
+            contenedorInicioTexto.classList.add('mostrar');
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo_italiannis.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__link" href="menu.html">Menú</a>
+        <a class="navegacion__link" href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="contenedor">
+        <section class="contenedor__inicio">
+            <h1>MENÚ</h1>
+            <div class="contenedor__inicio__texto">
+                <p> A lo largo de muchos años, en Italianni’s nos hemos dedicado a buscar y reunir las mejores recetas familiares de Italia, ofreciendo también su historia, aquella que ha trascendido por generaciones, y que hoy se sirve en nuestras mesas.
+                </p>
+            </div>
+        </section>
+
+        <section class="contenedor__menu">
+            <div class="contenedor__menu__desayunos">
+                <a class="contenedor__menu__texto" href="desayunos/dellacasa.html">DESAYUNOS</a>
+            </div>
+
+            <div class="contenedor__menu__comidas">
+                <a class="contenedor__menu__texto" href="comidas/pizza.html">COMIDAS</a>
+            </div>
+
+            <div class="contenedor__menu__postres">
+                <a class="contenedor__menu__texto" href="postres/postre.html">POSTRES</a>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="footer">
+        <div class="footer__contenedor">
+            <a href="index.html">
+                <img class="footer__logo" src="img/logo2_italiannis.png" alt="Logotipo">
+            </a>
+            <a class="footer__texto" href="https://www.italiannis.com.mx/AVISO-de-privacidad/">Aviso de privacidad</a>
+            <a class="footer__texto" href="https://www.italiannis.com.mx/Politicas-de-uso-del-sitio-web/">Políticas del uso del sitio web</a>
+        </div>
+    </section>
+
+    <footer class="subfooter">
+        <p class="subfooter__texto">Italianni’s Copyrigth 2022. Todos los Derechos Reservados</p>
+    </footer>
+
+</body>
+
+</html>
